@@ -1,3 +1,4 @@
+Plug in sound device
 Remap a stereo input-sink to a mono sink by creating a virtual sink. It would be useful if you only have one speaker. Add to /etc/pulse/default.pa:
 
 load-module module-remap-sink master=alsa_output.pci-0000_00_1f.5.analog-stereo sink_name=mono sink_properties="device.description='Mono'" channels=2 channel_map=mono,mono
